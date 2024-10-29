@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Clase 01</title>
+    <link rel="stylesheet" href="estilos.css">    
+</head>
+
+<body>
+    <header id="cabecera">
+        <h1>Semana 01</h1>        
+        <nav>
+            <ul>                
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <section id="productos">
+        <h2>Lista de Productos</h2>
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Monitor</td>
+                <td>$120.50</td>
+            </tr>
+            <tr>
+                <td>Teclado Hp</td>
+                <td>$20.00</td>
+            </tr>
+        </table>
+
+        <h2>Galería</h2>
+
+        <div class="productos">
+            <img src="monitor.png" alt="Monitor" width="250px" height="250px">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_979398-MLA43875404045_102020-O.webp" alt="Teclado" width="250px" height="250px">            
+        </div>
+
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctenos</h2>
+        <form action="/enviar" id="frmContacto" method="post">
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" id="txtNombre" name="txtNombre" required>
+
+            <label for="txtCorreo">Correo: </label>
+            <input type="email" id="txtCorreo" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 - Todos los derechos reservardos.</p>
+    </footer>
+
+</body>
+
+</html>
