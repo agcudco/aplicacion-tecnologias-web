@@ -1,0 +1,87 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    /*presentar en forma de cuadricula*/
+    grid-template-columns: 1fr 1fr; /*crea dos columnas de igual tamaño*/
+    gap: 20px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+    position: relative;
+    border-radius: 25px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    filter: brightness(80%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    padding: 20px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+.form-section label {
+    font-weight: 300;
+    display: block;
+    margin-top: 10px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3 ease;
+}
+
+.form-section input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.btn-registrar {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-registrar:hover {
+    background-color: aliceblue;
+    color: red;
+}
