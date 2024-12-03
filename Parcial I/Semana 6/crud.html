@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud de estudiantes</title>
+</head>
+
+<body>
+    <h2>Gestión de estudiantes</h2>
+    <form id="frmEstudiantes">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="number">
+        <label for="nrc">NRC:</label>
+        <input type="text" name="nrc" id="nrc">
+        <button type="submit" id="btnGuardar">Guardar</button>
+    </form>
+    <h3>Listado de estudiantes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>NRC</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tableEstudiantes">
+
+        </tbody>
+    </table>
+
+    <script src="crud.js"></script>
+</body>
+
+</html>
